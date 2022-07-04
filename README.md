@@ -1,41 +1,18 @@
-# CV (cv)
+<img alt="wallpaper" src="src/assets/wallpapers/5.webp" />
 
-Curriculum Vitae
+# Curriculum Vitae
 
-## Install the dependencies
-```bash
-yarn
-# or
-npm install
-```
+Showing a resume on a website is always cool 😎
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
+In addition, practising some frontend skills 🎸
 
+You can visit on: https://www.mpont91.com
 
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
+## 💻 Built with
 
+- [Quasar Framework](https://quasar.dev/)
 
-### Format the files
-```bash
-yarn format
-# or
-npm run format
-```
+## 🛡️ License
 
+This project is licensed under the MIT License - see the [`LICENSE`](LICENSE) file for details.
 
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
