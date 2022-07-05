@@ -15,4 +15,3 @@ You can visit on: https://www.mpont91.com
 ## 🛡️ License
 
 This project is licensed under the MIT License - see the [`LICENSE`](LICENSE) file for details.
-
