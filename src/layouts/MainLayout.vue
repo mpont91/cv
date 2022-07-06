@@ -1,13 +1,13 @@
 <template>
   <q-layout view="hhh lpr fff">
-    <q-header elevated>
-      <q-toolbar>
-        <q-toolbar-title> Quasar App </q-toolbar-title>
-        <div>Quasar v{{ $q.version }}</div>
-      </q-toolbar>
-    </q-header>
+    <the-header-component />
     <q-page-container>
       <router-view />
     </q-page-container>
+    <the-footer-component />
   </q-layout>
 </template>
+<script setup>
+import TheHeaderComponent from 'components/TheHeaderComponent.vue'
+import TheFooterComponent from 'components/TheFooterComponent.vue'
+</script>
