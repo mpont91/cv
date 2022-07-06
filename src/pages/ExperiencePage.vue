@@ -1,5 +1,6 @@
-<template>Experience</template>
-
-<script setup></script>
-
-<style scoped></style>
+<template>
+  <the-experience-component />
+</template>
+<script setup>
+import TheExperienceComponent from 'components/TheExperienceComponent.vue'
+</script>
