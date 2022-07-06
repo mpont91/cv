@@ -1,7 +1,6 @@
 <template>
   <q-timeline color="secondary">
     <q-timeline-entry heading> Experience </q-timeline-entry>
-
     <q-timeline-entry
       v-for="(job, i) in jobs"
       :key="i"

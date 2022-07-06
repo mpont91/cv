@@ -27,6 +27,7 @@
     </q-toolbar>
   </q-footer>
 </template>
+
 <script setup>
 import { ref } from 'vue'
 import logo from 'assets/logo.webp'

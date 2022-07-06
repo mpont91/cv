@@ -9,6 +9,7 @@
     <the-footer-component />
   </q-layout>
 </template>
+
 <script setup>
 import TheHeaderComponent from 'components/TheHeaderComponent.vue'
 import TheFooterComponent from 'components/TheFooterComponent.vue'

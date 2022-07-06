@@ -26,6 +26,7 @@
     </q-toolbar>
   </q-header>
 </template>
+
 <script setup>
 import { ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
@@ -39,6 +40,7 @@ const linkOptions = [
   { label: 'Experience', value: 'experience' },
   { label: 'Education', value: 'education' },
   { label: 'Skills', value: 'skills' },
+  { label: 'About', value: 'about' },
   { label: 'Portfolio', value: 'portfolio' },
 ]
 const linkNavigate = (routeName) => {
