@@ -1,4 +1,4 @@
-<img alt="wallpaper" src="src/assets/wallpapers/5.webp" />
+<img alt="wallpaper" src="src/assets/sliders/5.webp" />
 
 # Curriculum Vitae
 
