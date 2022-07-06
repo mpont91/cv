@@ -1,5 +1,7 @@
-<template>Education</template>
+<template>
+  <the-education-component />
+</template>
 
-<script setup></script>
-
-<style scoped></style>
+<script setup>
+import TheEducationComponent from 'components/TheEducationComponent.vue'
+</script>
