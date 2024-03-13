@@ -12,45 +12,45 @@ import Hero from "@/components/Hero.astro"
 ---
 
 <Layout
-  title="Porfolio de midudev - Desarrollador y Programador Web con 15 años de experiencia"
-  description="Contrata a midudev para crear tu aplicación web o móvil. Desarrollador Web y Creador de Contenido. Especializado en crear aplicaciones únicas."
+    title="Marc Pont - Fullstack developer with +10 years of experience"
+    description="Contact me if you have any interesting project to develop. I like having side projects to experiment with new technologies."
 >
-  <main class="px-4">
-    <SectionContainer class="py-16 md:py-36">
-      <Hero>
-      </slot>
-    </Hero>
-    </SectionContainer>
-    <div class="space-y-24">
-    <SectionContainer id="experiencia">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <Briefcase class="size-8" />
-        Experiencia laboral
-      </h2>
-      <Experience />
-    </SectionContainer>
+    <main class="px-4">
+        <SectionContainer class="py-16 md:py-36">
+            <Hero>
+                <slot/>
+            </Hero>
+        </SectionContainer>
+        <div class="space-y-24">
+            <SectionContainer id="experience">
+                <h2
+                    class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+                >
+                    <Briefcase class="size-8"/>
+                    Experience
+                </h2>
+                <Experience/>
+            </SectionContainer>
 
-    <SectionContainer id="proyectos">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
-      >
-        <CodeIcon class="size-7" />
-        Proyectos
-      </h2>
-      <Projects />
-    </SectionContainer>
+            <SectionContainer id="projects">
+                <h2
+                    class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+                >
+                    <CodeIcon class="size-7"/>
+                    Projects
+                </h2>
+                <Projects/>
+            </SectionContainer>
 
-    <SectionContainer id="sobre-mi">
-      <h2
-        class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
-      >
-        <ProfileCheck class="size-8" />
-        Sobre mí
-      </h2>
-      <AboutMe />
-    </SectionContainer>
-  </div>
-  </main>
+            <SectionContainer id="about-me">
+                <h2
+                    class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-black/80 dark:text-white"
+                >
+                    <ProfileCheck class="size-8"/>
+                    About me
+                </h2>
+                <AboutMe/>
+            </SectionContainer>
+        </div>
+    </main>
 </Layout>

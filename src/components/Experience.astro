@@ -1,30 +1,56 @@
 ---
 import ExperienceItem from "./ExperienceItem.astro"
 const EXPERIENCIE = [
-  {
-    date: "Actualmente...",
-    title: "Creador de Contenido",
-    company: "Twitch",
-    description:
-      "Divulgo sobre programación y desarrollo web en diferentes plataformas. Galardonado como mejor creador de contenido de habla no-inglesa en 2022 y mejor comunidad en 2023 por GitHub.",
-    link: "https://twitch.tv/midudev",
-  },
-  {
-    date: "Septiembre 2022",
-    title: "Principal Frontend Engineer",
-    company: "Adevinta Spain",
-    description:
-      "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
-  },
+    {
+        date: "December 2022 (currently working)",
+        title: "Fullstack Developer",
+        company: "Present Connection Spain",
+        description: "Maintain a production stable application, creating new features, fixing bugs, improving the code, etc. Working with Laravel.",
+    },
+    {
+        date: "February 2022",
+        title: "Fullstack Developer",
+        company: "Efimàtica",
+        description:
+            "Develop a long-term project taking into account scalability, testability and maintenance. Following Microservices, DDD and hexagonal architecture approach, using docker and kubernetes. Working with Laravel and Vue frameworks.",
+    },
+    {
+        date: "July 2018",
+        title: "Fullstack Developer",
+        company: "Xarxafarmacèutica SL",
+        description:
+            "Unify legacy desktop applications into a single web application. Renew the intranet for customers. New web applications were made in PHP and JS, specifically with Laravel and Vue.js frameworks and Vuetify for the styles.",
+    },
+    {
+        date: "September 2016",
+        title: "E-commerce Developer",
+        company: "Global Software Partner",
+        description:
+            "Create online stores for various customers and integrate them with SAP B1. Using Magento2 framework.",
+    },
+    {
+        date: "July 2014",
+        title: "Fullstack developer",
+        company: "Grup Puig Infante",
+        description:
+            "Revamp company websites, multiple landing pages and online stores. All the websites were made in PHP, specially with the framework Codeigniter and bootstrap library for the styles.",
+    },
+    {
+        date: "February 2014",
+        title: "Fullstack developer",
+        company: "Ingenium Mobile Studio",
+        description:
+            "Create new features and fixing bugs of an existing web applications. The applications were made in PHP, specially frameworks like: Wordpress, Bootstrap, Smarty, Twig.",
+    },
 ]
 ---
 
 <ol class="relative mt-16">
-  {
-    EXPERIENCIE.map((experiencie) => (
-      <li class="">
-        <ExperienceItem {...experiencie} />
-      </li>
-    ))
-  }
+    {
+        EXPERIENCIE.map((experiencie) => (
+            <li class="">
+                <ExperienceItem {...experiencie}/>
+            </li>
+        ))
+    }
 </ol>
