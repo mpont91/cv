@@ -1,0 +1,74 @@
+---
+import { FolderGit2, ExternalLink, Github } from 'lucide-astro'
+
+const { projects } = Astro.props
+---
+
+<section class="mb-14">
+  <h2
+    class="text-xl font-bold text-zinc-100 uppercase tracking-widest border-b border-zinc-800 pb-3 mb-8 flex items-center gap-3"
+  >
+    <FolderGit2 class="w-5 h-5 text-teal-500" />
+    Projects
+  </h2>
+
+  <div class="grid grid-cols-1 gap-6">
+    {
+      projects.map((project: any) => (
+        <div class="group relative flex flex-col justify-between bg-zinc-900/40 border border-zinc-800/80 rounded-xl p-6 md:p-8 hover:border-teal-500/50 hover:bg-zinc-900/80 transition-all duration-300 hover:shadow-[0_0_15px_rgba(45,212,191,0.05)]">
+          <div>
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-5 gap-4 sm:gap-0">
+              <div class="flex items-center gap-3 flex-wrap">
+                <h3 class="text-xl font-bold text-zinc-100 group-hover:text-teal-400 transition-colors">
+                  {project.title}
+                </h3>
+                {project.badges.length > 0 && (
+                  <span class="text-xs font-mono text-teal-400 bg-teal-500/10 px-2.5 py-1 rounded border border-teal-500/20 whitespace-nowrap">
+                    {project.badges[0]}
+                  </span>
+                )}
+              </div>
+
+              {project.links.length > 0 && (
+                <div class="flex items-center gap-4 shrink-0 mt-1 sm:mt-0">
+                  {project.links.map((link: any) => (
+                    <a
+                      href={link.url}
+                      target="_blank"
+                      class="flex items-center gap-1.5 text-sm font-medium text-zinc-400 hover:text-teal-400 transition-colors"
+                    >
+                      {link.url.includes('github') ? (
+                        <Github class="w-4 h-4" />
+                      ) : (
+                        <ExternalLink class="w-4 h-4" />
+                      )}
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <ul class="space-y-3 text-sm text-zinc-400 mb-6">
+              {project.achievements.map((ach: string) => (
+                <li class="flex gap-3 leading-relaxed">
+                  <span class="mt-2 h-1 w-1 shrink-0 bg-zinc-700 rounded-sm group-hover:bg-teal-500/60 transition-colors" />
+                  <span>{ach}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="pt-5 border-t border-zinc-800/80">
+            <div class="text-sm font-mono text-zinc-500 leading-relaxed">
+              <span class="text-zinc-300 font-sans font-semibold mr-2">
+                Stack:
+              </span>
+              {project.technologies}
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>

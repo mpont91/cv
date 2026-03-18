@@ -1,0 +1,64 @@
+---
+import { Briefcase, MapPin, Calendar } from 'lucide-astro'
+
+const { experience } = Astro.props
+---
+
+<section class="mb-14">
+  <h2
+    class="text-xl font-bold text-zinc-100 uppercase tracking-widest border-b border-zinc-800 pb-3 mb-8 flex items-center gap-3"
+  >
+    <Briefcase class="w-5 h-5 text-teal-500" />
+    Experience
+  </h2>
+
+  <div class="relative border-l border-zinc-800/80 ml-3 space-y-12 pb-4">
+    {
+      experience.map((job: any, index: number) => (
+        <div class="relative pl-8 md:pl-10">
+          <span
+            class={`absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full ring-4 ring-zinc-900 ${
+              index === 0
+                ? 'bg-teal-400 shadow-[0_0_10px_rgba(45,212,191,0.6)]'
+                : 'bg-zinc-700'
+            }`}
+          />
+
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-5">
+            <h3 class="text-lg font-bold text-zinc-100">{job.company}</h3>
+            <span class="text-sm font-medium text-zinc-500 mt-1 sm:mt-0 flex items-center gap-1.5">
+              <MapPin class="w-3.5 h-3.5 text-teal-500/60" />
+              {job.location}
+            </span>
+          </div>
+
+          <div class="flex flex-col gap-8">
+            {job.roles.map((role: any) => (
+              <div class="relative">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-3">
+                  <h4 class="text-base font-semibold text-teal-400/90">
+                    {role.title}
+                  </h4>
+
+                  <div class="flex items-center gap-1.5 text-sm italic text-zinc-400 mt-1 sm:mt-0 whitespace-nowrap">
+                    <Calendar class="w-3.5 h-3.5 text-teal-500/60" />
+                    <span>{role.dates}</span>
+                  </div>
+                </div>
+
+                <ul class="space-y-3 text-sm text-zinc-400">
+                  {role.achievements.map((ach: string) => (
+                    <li class="flex gap-3 leading-relaxed">
+                      <span class="mt-2 h-1 w-1 shrink-0 bg-teal-500/50 rounded-sm" />
+                      <span>{ach}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>

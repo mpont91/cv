@@ -1,0 +1,189 @@
+{
+  "basics": {
+    "name": "Marc Pont Casadevall",
+    "title": "Full Stack Developer",
+    "location": "Girona, Spain",
+    "phone": "+34 662 030 050",
+    "email": "mpont91@gmail.com",
+    "website": "https://mpont91.com",
+    "linkedin": "https://www.linkedin.com/in/mpont91",
+    "github": "https://github.com/mpont91",
+    "summary": [
+      "I am a Full Stack Developer with over a decade of experience building scalable applications from the ground up. Starting my career in 2013 within small IT teams, I quickly learned the value of adaptability, becoming highly self-taught and comfortable navigating complex, undocumented challenges.",
+      "My technical journey began deep in the PHP ecosystem (Laravel, Symfony) and evolved naturally alongside the modern web. Today, I build dynamic frontend applications using Vue, React, and Astro, heavily relying on utility-first CSS frameworks like Tailwind to craft efficient, responsive UIs.",
+      "Beyond just writing code, I am deeply passionate about software architecture and infrastructure (Docker, Kubernetes). I strongly advocate for Clean Code, Domain-Driven Design (DDD), and Hexagonal Architecture. For me, code must not only work—it must be readable, maintainable, testable, and built to scale."
+    ]
+  },
+  "experience": [
+    {
+      "company": "Present Connection",
+      "location": "Girona, Spain (Remote)",
+      "roles": [
+        {
+          "title": "Full Stack Developer | Victoria-ID Project",
+          "dates": "Jul. 2025 -- Present",
+          "achievements": [
+            "Developed core full-stack features for the background screening platform (ID verification, digital document signing, and custom data forms) utilizing Vue.js and a highly customized Node.js/Express backend.",
+            "Took the initiative to introduce end-to-end (E2E) testing to the project, setting up Playwright from scratch to catch bugs before production and improve release reliability."
+          ]
+        },
+        {
+          "title": "Mobile Developer | Touchbase Project",
+          "dates": "May 2025 -- Jul. 2025",
+          "achievements": [
+            "Architected and scaffolded a dependent-care mobile application from the ground up using React Native and Expo, establishing a scalable project foundation.",
+            "Integrated IoT healthcare gadgets (fall detection, SOS alarms) and implemented complex state management and validation using TanStack Query, React Hook Form, and Zod."
+          ]
+        },
+        {
+          "title": "Full Stack Developer | STX Project",
+          "dates": "Dec. 2022 -- May 2025",
+          "achievements": [
+            "Developed and maintained a high-traffic production application using PHP (Laravel) and Vue.js within a cross-functional Agile/Scrum team.",
+            "Delivered robust new features, resolved complex bugs, and optimized the existing codebase, utilizing Tailwind CSS for modern and responsive UI design."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Efimatica",
+      "location": "Girona, Spain",
+      "roles": [
+        {
+          "title": "Full Stack Developer",
+          "dates": "Feb. 2022 -- Dec. 2022",
+          "achievements": [
+            "Architected and developed a scalable, long-term web application applying Domain-Driven Design (DDD) and Hexagonal Architecture principles.",
+            "Built robust backend services using PHP (Laravel) and implemented a modular frontend using Vue.js, Quasar, and Tailwind CSS.",
+            "Deployed and managed containerized microservices utilizing Docker and Kubernetes, ensuring high availability and testability.",
+            "Implemented end-to-end testing strategies using Cypress to maintain code quality and prevent regressions in production."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "XarxaFarma",
+      "location": "Girona, Spain",
+      "roles": [
+        {
+          "title": "Full Stack Developer",
+          "dates": "Jul. 2018 -- Feb. 2022",
+          "achievements": [
+            "Modernized the company's technical infrastructure by migrating legacy desktop applications into a unified, centralized web platform.",
+            "Redesigned and developed a new customer intranet, improving user experience and accessibility using Vue.js and Vuetify.",
+            "Engineered reliable RESTful APIs and backend logic with PHP and Laravel, backed by MySQL databases and Docker environments."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Global Software Partner (GSP)",
+      "location": "Girona, Spain",
+      "roles": [
+        {
+          "title": "Ecommerce Developer",
+          "dates": "Sep. 2016 -- Jul. 2018",
+          "achievements": [
+            "Developed and deployed custom e-commerce solutions for multiple B2B and B2C clients utilizing the Magento 2 framework.",
+            "Engineered complex integrations between Magento stores and SAP B1 ERP systems via REST APIs to synchronize inventory and order data."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Grup Puig Infante",
+      "location": "Girona, Spain",
+      "roles": [
+        {
+          "title": "Full Stack Developer",
+          "dates": "Jul. 2014 -- Sep. 2016",
+          "achievements": [
+            "Revamped and maintained a portfolio of corporate websites, landing pages, and online stores to improve brand presence.",
+            "Developed custom backend solutions utilizing PHP and CodeIgniter, with responsive frontend designs implemented via Bootstrap."
+          ]
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Automated Dev Environments (Dotfiles)",
+      "links": [
+        { "label": "WSL", "url": "https://github.com/mpont91/dotfiles-wsl" },
+        { "label": "macOS", "url": "https://github.com/mpont91/dotfiles-mac" }
+      ],
+      "badges": [],
+      "technologies": "Zsh, Bash, Makefile, WSL, macOS, Git (SSH/GPG)",
+      "achievements": [
+        "Engineered automated configuration scripts to instantly bootstrap and standardize development environments across macOS and Windows (WSL) architectures.",
+        "Utilized Makefiles to orchestrate the installation of system packages (Homebrew, APT), terminal environments (Oh My Zsh), and IDE profiles (VS Code, Android Studio).",
+        "Automated the provisioning of SSH keys and GPG-signed commits for multiple Git profiles, ensuring secure and seamless context switching between personal and corporate repositories."
+      ]
+    },
+    {
+      "title": "AI-Powered Algorithmic Trading Engine",
+      "links": [
+        { "label": "Live Dashboard", "url": "https://trading.mpont91.com/" }
+      ],
+      "badges": ["Private Repo"],
+      "technologies": "Node.js, Express, Astro, Vue.js, Gemini AI",
+      "achievements": [
+        "Developed an automated backend system using Express that executes scheduled hourly cron jobs to fetch and analyze real-time market data (RSI, EMA indicators).",
+        "Integrated the Gemini AI API to evaluate technical indicators and programmatically execute trades via the Binance API based on AI-driven decisions.",
+        "Built a decoupled, high-performance frontend dashboard utilizing Astro, Vue.js, and Tailwind CSS to monitor system operations and visualize data."
+      ]
+    },
+    {
+      "title": "Custom ERP & Corporate Platform",
+      "links": [{ "label": "geo3.cat", "url": "https://geo3.cat/" }],
+      "badges": ["Private Repo"],
+      "technologies": "Laravel, Vue.js, Quasar, Tailwind CSS",
+      "achievements": [
+        "Engineered a comprehensive internal management system (Intranet) from scratch to handle client portfolios, track billable hours, and automate PDF invoice generation.",
+        "Designed and deployed a responsive corporate landing page using Vue.js and Quasar to showcase services and drive customer acquisition.",
+        "Actively maintain the system as a solo developer, rolling out new features and ensuring production stability for daily business operations."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages",
+      "items": "PHP, TypeScript, JavaScript, SQL, HTML/CSS"
+    },
+    {
+      "category": "Frameworks & Libraries",
+      "items": "Laravel, Vue.js, React, Next.js, React Native, Expo, Express, Astro, TailwindCSS"
+    },
+    {
+      "category": "Databases & ORMs",
+      "items": "MySQL, PostgreSQL, Prisma, Eloquent, Knex"
+    },
+    {
+      "category": "Tools & DevOps",
+      "items": "Git, Docker, Kubernetes, PHPUnit, Jest, Cypress, Playwright"
+    },
+    {
+      "category": "Architecture & Methodologies",
+      "items": "Domain-Driven Design (DDD), Hexagonal Architecture, SOLID, TDD, Agile/Scrum"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universitat de Girona",
+      "location": "Girona, Spain",
+      "degree": "Master of Science in Computer Engineering",
+      "dates": "2012 -- 2015"
+    },
+    {
+      "institution": "Universitat de Girona",
+      "location": "Girona, Spain",
+      "degree": "Bachelor of Science in Computer Systems Engineering",
+      "dates": "2009 -- 2012"
+    }
+  ],
+  "spokenLanguages": [
+    { "language": "Catalan", "proficiency": "Native" },
+    { "language": "Spanish", "proficiency": "Native" },
+    { "language": "English", "proficiency": "Professional Working Proficiency" }
+  ]
+}
