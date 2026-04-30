@@ -121,16 +121,16 @@
       ]
     },
     {
-      "title": "AI-Powered Algorithmic Trading Engine",
+      "title": "AI-Powered Trading & Investment Ecosystem",
       "links": [
-        { "label": "Live Dashboard", "url": "https://trading.mpont91.com/" }
+        { "label": "Live Dashboard", "url": "https://finance.mpont91.com/" }
       ],
       "badges": ["Private Repo"],
-      "technologies": "Node.js, Express, Astro, Vue.js, Gemini AI",
+      "technologies": "Node.js, TypeScript, Prisma, Zod, Astro, Vue.js, Gemini AI",
       "achievements": [
-        "Developed an automated backend system using Express that executes scheduled hourly cron jobs to fetch and analyze real-time market data (RSI, EMA indicators).",
-        "Integrated the Gemini AI API to evaluate technical indicators and programmatically execute trades via the Binance API based on AI-driven decisions.",
-        "Built a decoupled, high-performance frontend dashboard utilizing Astro, Vue.js, and Tailwind CSS to monitor system operations and visualize data."
+        "Architected a dual-purpose financial engine using Node.js and TypeScript, supporting both high-frequency algorithmic trading and long-term investment strategies via scheduled cron jobs.",
+        "Engineered a robust AI pipeline integrating the Gemini API with strict Zod validation to process market data, reducing server memory overhead by implementing Prisma query optimizations and data downsampling for time-series charts.",
+        "Built a decoupled, high-performance frontend dashboard utilizing Astro and Vue.js, implementing custom pagination, independent async loading, and Stale-While-Revalidate (SWR) patterns to smoothly render large datasets."
       ]
     },
     {
